@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo MeigeBross</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url('https://images.unsplash.com/photo-1596462502278-27bfdc403ccc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900"> 
+
+    <header class="hero-bg shadow-sm p-12 text-center border-b border-pink-100">
+        <h1 class="text-5xl font-extrabold text-pink-600 drop-shadow-sm">MeigeBross</h1>
+        <p class="text-gray-600 italic mt-2 font-medium">Ventas al por mayor y combos</p>
+    </header> 
+
+    <main class="max-w-6xl mx-auto p-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <script>
+                function crearProducto(img, nombre, precio) {
+                    document.write(`
+                        <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+                            <!-- La imagen ahora es un enlace que abre la foto grande para descargar -->
+                            <a href="${img}" target="_blank" title="Ver/Descargar imagen">
+                                <img src="${img}" class="rounded-lg w-full h-40 object-cover mb-3 hover:opacity-80 transition">
+                            </a>
+                            <p class="font-bold text-sm">${nombre}</p>
+                            <p class="text-pink-600 font-bold mb-3">${precio}</p>
+                            <a href="https://wa.me/5354408025?text=Hola,%20quiero%20pedir:%20${nombre}" 
+                               class="mt-auto bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 rounded-lg text-center transition text-sm shadow-md">
+                                Pedir este
+                            </a>
+                        </div>
+                    `);
+                }
+            </script>
+
+            <!-- Tus productos aquí -->
+            <script>crearProducto("https://i.imgur.com/8ATgdDw.jpeg", "Mascarilla carbón", "0.50 USD");</script>
+            <script>crearProducto("https://i.imgur.com/ZGP0Mh7.jpeg", "Delineador plástico", "0.68 USD");</script>
+            <script>crearProducto("https://i.imgur.com/kBS0vF1.jpeg", "Parches ojeras", "0.35 USD");</script>
+            <script>crearProducto("https://i.imgur.com/6ycCPs8.jpeg", "Rubor", "0.70 USD");</script>
+            <script>crearProducto("https://i.imgur.com/nHIrQaX.jpeg", "Brillo lazo", "0.85 USD");</script>
+            <script>crearProducto("https://i.imgur.com/8Wu13DB.jpeg", "Creyón", "0.80 USD");</script>
+            <script>crearProducto("https://i.imgur.com/GvLEKEn.jpeg", "Bálsamo Rosa", "0.75 USD");</script>
+            <script>crearProducto("https://i.imgur.com/ABHhlli.jpeg", "Vaselina", "0.55 USD");</script>
+            <script>crearProducto("https://i.imgur.com/Z7PwaKo.jpeg", "Esponjas (12ud)", "5.00 USD");</script>
+            <script>crearProducto("https://i.imgur.com/QiKZ2q1.jpeg", "Serum Milk", "1250 CUP");</script>
+            <script>crearProducto("https://i.imgur.com/KBv6f12.jpeg", "Serum Aguacate", "1250 CUP");</script>
+            <script>crearProducto("https://i.imgur.com/0M91CNv.jpeg", "Creyón", "0.80 USD");</script>
+            <script>crearProducto("https://i.imgur.com/HfGaj7c.jpeg", "Brillo Kirumi", "0.75 USD");</script>
+            <script>crearProducto("https://i.imgur.com/TST749s.jpeg", "Brillo liso", "0.75 USD");</script>
+            <script>crearProducto("https://i.imgur.com/QjXi4Ya.jpeg", "Bálsamo fresa", "0.55 USD");</script>
+            <script>crearProducto("https://i.imgur.com/neHANDW.jpeg", "Brillo fresa", "0.75 USD");</script>
+            <script>crearProducto("https://i.imgur.com/lhr7voa.jpeg", "Brillo miel", "0.75 USD");</script>
+            <script>crearProducto("https://i.imgur.com/QyNw9ez.jpeg", "Brillo", "0.85 USD");</script>
+            <script>crearProducto("https://i.imgur.com/sd2qwSN.jpeg", "Rimel trans.", "0.85 USD");</script>
+            <script>crearProducto("https://i.imgur.com/dtvpLHt.jpeg", "Brillo Dior", "0.85 USD");</script>
+            <script>crearProducto("https://i.imgur.com/CrDxld5.jpeg", "Crema Facial", "2.64 USD");</script>
+            <script>crearProducto("https://i.imgur.com/Fe5CBrx.jpeg", "Mini base", "0.58 USD");</script>
+            <script>crearProducto("https://i.imgur.com/sNJ4ABS.jpeg", "Bálsamo fruta", "0.35 USD");</script>
+            <script>crearProducto("https://i.imgur.com/lGYe2cf.jpeg", "Bálsamo fruta", "0.35 USD");</script>
+            <script>crearProducto("https://i.imgur.com/0X3j1N1.jpeg", "Rimel Plástico", "0.70 USD");</script>
+            <script>crearProducto("https://i.imgur.com/xder1Wz.jpeg", "Lápiz de ojos negros (12ud)", "3.00 USD");</script>
+            <script>crearProducto("https://i.imgur.com/ZwgQG0m.jpeg", "Parches de ojeras", "0.35 USD");</script>
+        </div>
+    </main> 
+</body>
+</html>
